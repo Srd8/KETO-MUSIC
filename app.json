@@ -1,0 +1,111 @@
+{
+    "name": "KEOT MUSIC",
+    "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by PyTgCalls and Pyrogram",
+    "logo": "https://telegra.ph/file/c224ad681929e1aabaf79.jpg",
+    "keywords": [
+        "py-tgcalls",
+        "telegram bot",
+        "video stream",
+        "live stream",
+        "music stream",
+        "mongodb",
+        "pyrogram"
+    ],
+    "website": "https://t.me/TEAMALSQR",
+    "repository": "https://github.com/srd8/SAQR-MUSIC",
+    "success_url": "https://t.me/srd8/SAQR-MUSIC",
+    "env": {
+        "API_ID": {
+            "description": "قم بوضع الايبي ايدي هنا",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "قم بوضع الايبي هاش",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "قم بوضع توكن البوت الخاص بك هنا",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "قم بوضع يوزر بوتك بدون علامة @",
+            "required": true,
+            "value": ""
+        },
+        "ASSISTANT_NAME": {
+            "description": "قم بوضع يوزر الحساب المساعد بدون علامة @",
+            "required": true,
+            "value": ""
+        },
+        "SESSION_NAME": {
+            "description": "قم بوضع كود تيرمكس هنا",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "قم بوضع ايدي المطور الاساسي",
+            "required": true,
+            "value": ""
+        },
+        "GROUP_SUPPORT": {
+            "description": "ضع هنا يوزر جروبك بدون علامة @",
+            "required": true,
+            "value": ""
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ضع هنا يوزر قناتك بدون علامة @",
+            "required": true,
+            "value": ""
+        },
+        "OWNER_NAME": {
+            "description": "ضع هنا يوزر المطور بدون علامة @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_PHOTO": {
+            "description": "ضع لينك صورة البوت ",
+            "required": true
+        },
+        "DEV_PHOTO": {
+            "description": "ضع لينك صورة حساب مطور البوت",
+            "required": true
+        },
+        "DEV_NAME": {
+            "description": "ضع اسم حساب التليجرام الخاص بالمطور",
+            "required": true
+        },
+        "ALIVE_NAME": {
+            "description": "ضع هنا اسم الحساب المساعد",
+            "required": true,
+            "value": ""
+        },
+        "MONGODB_URL": {
+            "description": "لا تغيره!",
+            "required": true,
+            "value": "mongodb+srv://lucifer:ASShaw96@lucifer.vuows.mongodb.net/lucifer?retryWrites=true&w=majority"
+        },
+        "UPSTREAM_REPO": {
+            "description": "اتركه كما هوا",
+            "required": true,
+            "value": "https://github.com/srd8/SAQR-MUSIC"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
